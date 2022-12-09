@@ -8,14 +8,14 @@ if (navigator.serviceWorker) {
   })
 }
 
-"use strict"
-  
+;("use strict")
+
 function calculate() {
-  const number = parseInt(document.getElementById("pay").value);
-  let answer = 0;
+  const number = parseInt(document.getElementById("pay").value)
+  let answer = 0
 
   for (let counter = 1; counter <= number; counter++) {
-    answer += counter;
+    answer += counter
   }
-  document.getElementById("answers").innerHTML = "The answer is: " + answer;
+  document.getElementById("answers").innerHTML = "The answer is: " + answer
 }
